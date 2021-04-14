@@ -1,0 +1,274 @@
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url('../fonts/Century Gothic.eot');
+	src: url('../fonts/Century Gothic.eot?') format('embedded-opentype'),
+	     url('../fonts/Century Gothic.woff2') format('woff2'),
+	     url('../fonts/Century Gothic.woff') format('woff'),
+	     url('../fonts/Century Gothic.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'CenturyGothicBold';
+	src: url('fonts/GOTHICB.eot');
+	src: url('../fonts/GOTHICB.eot?') format('embedded-opentype'),
+	     url('../fonts/GOTHICB.woff2') format('woff2'),
+	     url('../fonts/GOTHICB.woff') format('woff'),
+	     url('../fonts/GOTHICB.ttf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	scroll-behavior: smooth;
+}
+.noscroll {
+	background-image: url("../images/wallpaper.jpg ");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family: CenturyGothic, sans-serif;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.noscroll::-webkit-scrollbar{
+	display: none;
+}
+
+.homeTitle{
+	color: white;
+	font-family: CenturyGothic, sans-serif;
+	font-weight: bold;
+	font-size: 10vh;
+	margin-top: 30vh;
+	margin-bottom: 0vh;
+	margin-left: 5vw;
+}
+
+.homeIntro{
+	color: #BFBFBF;
+	font-size: 3.8vh;
+	margin-left: 7vw;
+	width: 70vw;
+	text-indent: 6vw;
+	line-height: 5.5vh;
+}
+
+.introPage{
+	background-color: #181818;
+	position: absolute;
+	text-align: center;
+	top: 100vh;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+}
+
+.learnmore{
+	position: absolute;
+	bottom: -2vh;
+	left: 75vw;
+	z-index: -1;
+}
+
+.top {
+	padding-top: 14vh;
+}
+
+.middle {
+	padding-top: 8vh;
+}
+
+.interlude {
+	padding-bottom: 8vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	color: white;
+	font-family: CenturyGothic, sans-serif;
+	font-weight: bold;
+	font-size: 10vh;
+	text-align: center;
+	min-height: 16vh;
+}
+
+.info {
+	position: relative;
+	text-align: center;
+	width: 100vw;
+	left: -8px;
+	padding-top: 6vh;
+	padding-bottom: 6vh;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	overflow: hidden;
+}
+
+.figure {
+	border-width: 0.4vw;
+	border-color: #666666;
+	border-style: solid;
+}
+
+.dark {
+	background-color: #181818;
+}
+
+.light {
+	background-color: #262626;
+}
+
+.video {
+	position: absolute;
+	top: 24vh;
+	left: 20vw;
+	width: 60vw;
+	height: 60vh;
+}
+
+.subtitle {
+	color: white;
+	font-family: CenturyGothic, sans-serif;
+	font-weight: bold;
+	font-size: 7vh;
+	margin-left: 4vw;
+	margin-right: 4vw;
+}
+
+.text {
+	position: absolute;
+	color: white;
+	font-size: 4vh;
+	top: 86vh;
+	width: 70vw;
+	text-align: center;
+	margin-top: 2vh;
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+.left {
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+	margin-right: 10vw;
+}
+
+.paragraph {
+	max-width:92vw;
+	color: white;
+	font-size: 4vh;
+	line-height: 6vh;
+}
+
+.indent {
+	text-indent: 4vw;
+}
+
+.floatLeft {
+	float: left;
+	max-width: 42.5vw;
+	min-width: 70vh;
+}
+.floatRight {
+	float: right;
+	max-width: 42.5vw;
+	min-width: 70vh;
+	margin-right: 10vw;
+}
+.navbar {
+	width: 100vw;
+	background-color: #2D2D2D;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	height: 8vh;
+	position: fixed;
+	overflow: hidden;
+	box-shadow: 0 0.67vh #666666;
+}
+
+.navbar a {
+	transition: 0.3s;
+	color: #EFEFEF;
+	background-color: #2D2D2D;
+	float: right;
+	display: block;
+	height: 7vh;
+	text-align: center;
+	font-family: CenturyGothic, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 2.4vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	padding-bottom: 2.4vh;
+	font-size: 3vh;
+}
+
+.navbar a:hover {
+	background-color: #363636;
+}
+
+.current {
+	font-family: CenturyGothicBold;
+	background-image: -webkit-linear-gradient(225deg,#00D333, #0077F3);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.notCurrent {
+	transition: 0.3s;
+	text-shadow: -0.2vw -0.18vw #008855, 0.18vw 0.18vw #0077F3;
+}
+.notCurrent:hover {
+	text-shadow:  0vw 0vw #0077F3, 0vw 0vw #008855;
+}
+
+.footer {
+	background-color: #262626;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+	left: 0;
+	box-shadow: 0 -0.67vh #444444;
+}
+
+.copyright {
+	font-size: 3vh;
+	color: #FFFFFF;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	font-family: CenturyGothic, sans-serif;
+	font-weight: bold;
+	margin-right: 4vw;
+}
+
+#homeItem {
+	padding-left: 3vw;
+	float: left;
+}
+
+#icon {
+	float: left;
+	transition: 0s;
+	padding-top: 0vh;
+	padding-left: 0vw;
+	padding-right: 1vw;
+	padding-bottom: 0vh;
+	margin-top: 1vh;
+	margin-left: 2vw;
+}
+
+#icon:hover {
+	background-color: #2D2D2D;
+}
+
+#iconImage {
+	height: 6vh;
+}
