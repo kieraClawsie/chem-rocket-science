@@ -224,10 +224,10 @@ html {
 
 .notCurrent {
 	transition: 0.3s;
-	text-shadow: -0.2vw -0.18vw #005522, 0.18vw 0.18vw #002266;
+	text-shadow: -0.2vw -0.2vw #008321, 0.2vw 0.2vw #008321, -0.2vw 0.2vw #008321, 0.2vw -0.2vw #008321, 0vw -0.2vw #008321, 0vw 0.2vw #008321, 0.2vw 0vw #008321, -0.2vw 0vw #008321;
 }
 .notCurrent:hover {
-	text-shadow:  0vw 0vw #002266, 0vw 0vw #005522;
+	text-shadow:  0 0 #008321, 0 0 #008321, 0 0 #008321, 0 0 #008321, 0 0 #008321, 0 0 #008321, 0 0 #008321, 0 0 #008321;
 }
 
 .footer {
